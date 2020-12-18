@@ -1,0 +1,16 @@
+{% load static %}
+
+	<div id="header">
+			<div id="logo">
+				<a href="{% url 'home' %}"><img src="{% static 'images/logo.jpg' %}" alt="" /></a>		
+			</div>		
+			<ul>
+				<li class="selected"><a href="{% url 'home' %}"><span>home</span></a></li>
+				<li><a href="{% url 'about' %}"><span>about us</span></a></li>
+				<li><a href="{% url 'services' %}"><span>services</span></a></li>
+				<li><a href="{% url 'products' %}"><span>products</span></a></li>
+                <li><a href="{% url 'blog' %}"><span>Blog</span></a></li>
+				<li><a href="{% url 'contact' %}"><span>contact us</span></a></li>		
+	
+			</ul>
+	</div>
